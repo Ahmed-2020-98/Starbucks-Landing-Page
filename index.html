@@ -17,6 +17,7 @@
 <body>
     <!-- header  -->
     <section class="header">
+        <div class="circle"></div>
         <header>
             <a href="#" ><img class="logo" src="images/logo.png" alt=""></a>
             <ul>
@@ -38,7 +39,22 @@
             </div>
             
         </div>
+        <ul class="thumb">
+            <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png')" alt=""></li>
+            <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png')" alt=""></li>
+            <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png')" alt=""></li>
+        </ul>
+        <ul class="social-media"> 
+            <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+        </ul>
     </section>
 
+    <script>
+        function imgSlider(img){
+            document.querySelector('.starbucks').src=img;
+        }
+    </script>
 </body>
 </html>
